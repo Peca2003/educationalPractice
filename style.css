@@ -3,6 +3,20 @@ body{
     margin: 0;
     padding: 0;
 }
+p{
+    width: 80%;
+}
+button{
+    width: 100px;
+    height: 30px;
+    background-color: #062170;
+    border: 2px solid white;
+    color: aliceblue;
+}
+button:hover{
+    background: #6D87D6;
+    color: #476BD6;
+}
 section{
     position: relative;
     width: 100%;
@@ -13,6 +27,8 @@ section{
     color: aliceblue;
     font-size: 2em;
     font-weight: 800;
+    margin: 0 auto;
+    text-align: center;
 }
 section:nth-child(odd){
     background-image: url(back.png);
@@ -48,7 +64,7 @@ section#sec3:hover~nav a[href="#sec3"]
 .slider{
     width: 256px;
     height: 256px;
-    border: 2px solid white;
+    
     margin: auto;
     overflow: hidden;
 }
