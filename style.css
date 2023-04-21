@@ -2,6 +2,7 @@
 body{
     margin: 0;
     padding: 0;
+    background-position: center center;
 }
 p{
     width: 80%;
@@ -12,6 +13,7 @@ button{
     background-color: #062170;
     border: 2px solid white;
     color: aliceblue;
+    text-align: center;
 }
 button:hover{
     background: #6D87D6;
@@ -29,12 +31,6 @@ section{
     font-weight: 800;
     margin: 0 auto;
     text-align: center;
-}
-section:nth-child(odd){
-    background-image: url(back.png);
-}
-section:nth-child(even){
-    background-image: url(back1.png);
 }
 nav{
     position: fixed;
@@ -75,4 +71,63 @@ section#sec3:hover~nav a[href="#sec3"]
     position: relative;
     left: 0;
     transition: all ease 1s;
+}
+
+@media (max-width:1440px){
+    section{
+        font-size: 1.5em;
+    }
+    nav a{
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width:1024px)
+{
+    section{
+        font-size: 1.1em;
+    }
+    nav a{
+        font-size: 1em;
+    }
+}
+
+@media (max-width:768px)
+{
+    section{
+        font-size: 0.9em;
+    }
+    nav a{
+        font-size: 0.7em;
+    }
+    button{
+        width: 80px;
+        height: 25px;
+    }
+}
+
+@media (max-width:425px){
+    section{
+        font-size: 0.9em;
+    }
+    nav a{
+        font-size: 0.7em;
+    }
+    button{
+        width: 70px;
+        height: 20px;
+    }
+}
+
+@media (max-width:375px){
+    section{
+        font-size: 0.9em;
+    }
+    nav a{
+        font-size: 0.7em;
+    }
+    button{
+        width: 70px;
+        height: 20px;
+    }
 }
