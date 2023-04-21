@@ -15,3 +15,6 @@ document.querySelector('.slider-prev').addEventListener('click', function(){
     }
     sliderLine.style.left = -offset + 'px';
 });
+
+let backgrounds = [ "url(./image/back.png)", "url(./image/back1.png)", "url(./image/back2.png)"];
+document.body.style.backgroundImage = backgrounds[Math.floor(Math.random() * (backgrounds.length + 1))];
