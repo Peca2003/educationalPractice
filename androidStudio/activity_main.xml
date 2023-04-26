@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="411dp"
+        android:layout_height="731dp"
+        android:background="@drawable/back"
+        tools:ignore="MissingConstraints"/>
+
+    <ViewFlipper
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:layout_marginVertical="80dp"
+        android:autoStart="true"
+        android:flipInterval="2000"
+        android:inAnimation="@android:anim/slide_in_left"
+        android:outAnimation="@android:anim/slide_out_right"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/astartes2" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/astartes3" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/astartes4" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/astartes5" />
+    </ViewFlipper>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="308dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Адептус Астартес - один из самых элитных и устрашающих вооруженных сил Империума. Основная оргпнизационная единица Астартес - орден, самостоятельная армия. Существует более тысячи орденов, но все равно этого слишком мало для того, чтобы считать космических десантников основной военной силой Империума."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/textViewFontColor"/>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="308dp"
+        android:layout_height="184dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="40dp"
+        android:text="Первые космодесантники были созданы с использованием генетического материалапримарховпосле того, как их унесои от Императораэнергии Богов Хаоса. Двадцать легионов космического десанта, созданных из генного материала двадцати примархов. Легионы приняли участие в Великом крестовом походе, во время которого каждый из потерянных примархов был найден и возвращен для командования своим легионом."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/textViewFontColor"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
